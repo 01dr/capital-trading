@@ -86,7 +86,7 @@ const favicon = done => {
 	realFavicon.generateFavicon({
 		masterPicture: src.favicon,
 		dest: dist.favicon,
-		iconsPath: '/icons',
+		iconsPath: './icons',
 		design: {
 			ios: {
 				pictureAspect: 'noChange',
