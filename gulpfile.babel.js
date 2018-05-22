@@ -9,6 +9,7 @@ import browserify from 'gulp-browserify';
 import babelify from 'babelify';
 import uglify from 'gulp-uglify';
 
+import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'autoprefixer';
@@ -25,8 +26,7 @@ const FAVICON_DATA_FILE = 'faviconData.json';
 
 const src = {
   html: 'src/pug/*.pug',
-  css: 'src/css/styles.css',
-	stls: 'src/css/**/*.css',
+  css: 'src/css/styles.scss',
 	js: './src/**/*.js',
 	images: 'src/images/**/*',
   video: 'src/video/**/*',
@@ -59,6 +59,7 @@ const css = () => {
 
 	return gulp.src(src.css)
 		.pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
 		.pipe(postcss(plugins))
 		.pipe(cssnano())
 		.pipe(sourcemaps.write('.'))
