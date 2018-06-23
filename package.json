@@ -44,8 +44,10 @@
     "gulp-real-favicon": "^0.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
+    "gumshoejs": "cferdinandi/gumshoe",
     "scrollreveal": "^3.3.6",
     "siema": "^1.5.1",
-    "zenscroll": "^4.0.2"
+    "smooth-scroll": "^14.2.0",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }
