@@ -10,6 +10,37 @@ body,
   scroll-behavior: smooth
 }
 
+body.mock-body {
+  background-color: #f4f4f4;
+}
+
+.mock {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  .logo > img {
+    width: 400px;
+  }
+}
+
+.note {
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #494949;
+}
+
 //
 
 .background {
@@ -119,6 +150,7 @@ body,
   margin: 0;
   display: inline-block;
   outline: none;
+  cursor: pointer;
 }
 
 .main-chevron-image {
