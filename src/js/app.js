@@ -11,6 +11,6 @@ scroll.init();
 const topbarCL = $('.topbar').classList;
 
 window.addEventListener('scroll', (event) => {
-  if (window.pageYOffset > 0) topbarCL.toggle('topbar-alt-state', true);
-  else topbarCL.toggle('topbar-alt-state', false);
+  if (window.pageYOffset === 0) topbarCL.toggle('topbar-alt-state', false);
+  else topbarCL.toggle('topbar-alt-state', true);
 });
