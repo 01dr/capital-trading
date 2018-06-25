@@ -45,9 +45,10 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "gumshoejs": "cferdinandi/gumshoe",
+    "nav-scroll-spy": "^1.0.2",
+    "scroll-window-to-element": "^1.0.5",
     "scrollreveal": "^3.3.6",
     "siema": "^1.5.1",
-    "smooth-scroll": "^14.2.0",
-    "smoothscroll-polyfill": "^0.4.3"
+    "smooth-scroll": "^14.2.0"
   }
 }

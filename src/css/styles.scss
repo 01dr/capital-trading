@@ -69,6 +69,7 @@ body.mock-body {
   width: 940px;
   margin: 0 auto;
   padding: 0 42px;
+  position: relative;
 
   @media screen and (max-width: 940px) {
     width: calc(100% - 40px);
@@ -79,17 +80,27 @@ body.mock-body {
 //
 
 .topbar {
+  width: 100%;
+  position: fixed;
+  transition: .2s .1s ease all;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .topbar-box {
+  width: 100%;
   height: 90px;
   border-bottom: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: .2s .1s ease all;
+}
+
+.topbar-nav {
+  display: flex;
 }
 
 .topbar-nav-link {
@@ -100,12 +111,69 @@ body.mock-body {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  transition: .3s .1s ease all;
+}
+
+.topbar-nav-link-wrapper {
+  line-height: 56px;
+  box-sizing: border-box;
+  border-top: 4px solid transparent;
+  transition: .1s ease all;
+}
+
+.topbar-nav-link-wrapper.active {
+  border-color: #1d8799;
+}
+
+.topbar-nav-link-wrapper.active > .topbar-nav-link {
+
+}
+
+.topbar-alt-state {
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topbar-alt-state .topbar-nav-link {
+  color: #000;
+}
+
+.topbar-alt-state .topbar-box {
+  height: 60px;
+  border: none;
+}
+
+.topbar-logo {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+
+.topbar-logo-black {
+  position: absolute;
+  opacity: 0;
+  transition: .2s .1s ease all;
+}
+
+.topbar-alt-state .topbar-logo-black {
+  opacity: 1;
+}
+
+.topbar-logo-white {
+  position: absolute;
+  opacity: 1;
+  transition: .2s .1s ease all;
+}
+
+.topbar-alt-state .topbar-logo-white {
+  opacity: 0;
 }
 
 //
 
 .main {
-  padding-bottom: 50px;
+  padding: 90px 0 50px;
 }
 
 .main-logo {

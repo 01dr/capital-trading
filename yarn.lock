@@ -4991,6 +4991,10 @@ natives@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/natives/-/natives-1.1.1.tgz#011acce1f7cbd87f7ba6b3093d6cd9392be1c574"
 
+nav-scroll-spy@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nav-scroll-spy/-/nav-scroll-spy-1.0.2.tgz#b11d711bd5067e96a495c3e7325b2e331b14535c"
+
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -6505,6 +6509,10 @@ sax@>=0.6.0, sax@~1.2.1, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
+scroll-window-to-element@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/scroll-window-to-element/-/scroll-window-to-element-1.0.5.tgz#155b9f280a124011e87fd475381d4896dd74cb53"
+
 scrollreveal@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-3.3.6.tgz#659b7bf0ba0e244dced978ac5540c00b43773e4a"
@@ -6680,10 +6688,6 @@ slash@^1.0.0:
 smooth-scroll@^14.2.0:
   version "14.2.0"
   resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-14.2.0.tgz#87a224fc32c8956995e5bb014a5e1a07b8361e21"
-
-smoothscroll-polyfill@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.3.tgz#94e5f2d604efcceb53f23ff0380d7ea7280d4bff"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

@@ -1,13 +1,16 @@
-import smoothscroll from 'smoothscroll-polyfill';
+import NavScrollSpy from 'nav-scroll-spy';
+import ScrollToElement from 'scroll-window-to-element';
 
-smoothscroll.polyfill();
-
-const options = { behavior: 'smooth' };
 const $ = (id) => document.querySelector(id);
 
-$('#aboutUsLink').addEventListener('click', () => $('#aboutUsSection').scrollIntoView(options));
-$('#chevronLink').addEventListener('click', () => $('#aboutUsSection').scrollIntoView(options));
-$('#whatWeDoLink').addEventListener('click', () => $('#whatWeDoSection').scrollIntoView(options));
-$('#missionLink').addEventListener('click', () => $('#missionSection').scrollIntoView(options));
-$('#partnersLink').addEventListener('click', () => $('#partnersSection').scrollIntoView(options));
-$('#contactsLink').addEventListener('click', () => $('#contactsSection').scrollIntoView(options));
+const spy = new NavScrollSpy({ offset: 110 });
+const scroll = new ScrollToElement({ offset: -100 });
+spy.init();
+scroll.init();
+
+const topbarCL = $('.topbar').classList;
+
+window.addEventListener('scroll', (event) => {
+  if (window.pageYOffset > 0) topbarCL.toggle('topbar-alt-state', true);
+  else topbarCL.toggle('topbar-alt-state', false);
+});
