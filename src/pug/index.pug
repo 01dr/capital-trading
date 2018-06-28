@@ -1,9 +1,132 @@
 extends includes/tpl.pug
 append head
-  title The another crypto fund
+  title Capital Trading
 block body
-  body.mock-body
-    div.mock
-      div.logo
-        img(src="./images/logo.svg" alt="Capital Trading")
-        div.note Website is under renovation
+  body
+    .background
+      .background-filter
+    .topbar
+      .container
+        .topbar-box
+          .topbar-logo
+            img.topbar-logo-white(src="./images/logo-white-small.svg" alt="CT")
+            img.topbar-logo-black(src="./images/logo-black-small.svg" alt="CT")
+          nav.topbar-nav
+            div.topbar-nav-link-wrapper
+              a.topbar-nav-link(href="#aboutUsSection") About Us
+            div.topbar-nav-link-wrapper
+              a.topbar-nav-link(href="#whatWeDoSection") What we do
+            div.topbar-nav-link-wrapper
+              a.topbar-nav-link(href="#missionSection") Our mission
+            div.topbar-nav-link-wrapper
+              a.topbar-nav-link(href="#partnersSection") Contact Us
+    .main
+      .container
+        .main-logo
+          img(src="./images/logo-white.svg" alt="Capital Trading")
+        .main-title Investment and advisory firm focused on the blockchain technologies
+        .main-chevron
+          a.main-chevron-button(href="#aboutUsSection")
+            img.main-chevron-image(src='./images/chevron-down.svg' alt="")
+    .callout#aboutUsSection
+      .container
+        .callout-box
+          img.callout-angle-left(src="./images/callout-left-bottom-angle.svg" alt="")
+          img.callout-angle-right(src="./images/callout-right-top-angle.svg" alt="")
+          .callout-title
+            .callout-title-string About Us
+            img.callout-title-divider(src="./images/callout-title-divider.svg" alt="")
+          .callout-content
+            p Located in the heart of Southeast Asia, Capital Trading focuses on investing in the most promising and innovative companies. We expedite the early-stage technology startups with revolutionary blockchain projects. As an advisory, we help businesses to choose the most optimal ways to raise capital through tokenization strategies and implement technologies in the right way to push their ideas to the next level.
+            p Capital Trading provides to its partners a full scope of services in the crypto market, which include strategic investments and business advisory services. We build strong connections with our clients by finding the best opportunities for our mutual benefits. Together, we transform global industries by connecting the power of distributed ledger technologies.
+    .wwd#whatWeDoSection
+      .container
+        .wwd-title What we do
+        .wwd-block
+          .wwd-block-divider
+          .wwd-block-icon
+            img.wwd-block-icon-image(src="./images/research-icon.svg" alt="")
+          .wwd-block-info
+            .wwd-block-info-title Research
+            .wwd-block-info-text Out constant market research allows us to capture strategic upside growth and mitigate downside risks. Our analysis compares both qualitative and quantitative approaches with deep insight into economics fundamentals behind the projects.
+        .wwd-block
+          .wwd-block-divider
+          .wwd-block-icon
+            img.wwd-block-icon-image(src="./images/connect-icon.svg" alt="")
+          .wwd-block-info
+            .wwd-block-info-title Connect
+            .wwd-block-info-text Our network expands across different areas such as institutional finance, technology, and marketing with a focus on the fast-growing Asian market. We build the bridges between people to combine talents, ideas, capitals, passion and visions to create the future.
+        .wwd-block
+          .wwd-block-icon
+            img.wwd-block-icon-image(src="./images/invest-icon.svg" alt="")
+          .wwd-block-info
+            .wwd-block-info-title Invest
+            .wwd-block-info-text Smart money should be really smart to help entrepreneurs achieve the growth and success in the market. We act as not only investors but also supporters of our portfolio of companies, by advising and helping with business development.
+    #missionSection
+      .mission
+        .container
+          .mission-title Our mission
+          img.mission-title-divider(src="./images/callout-title-divider.svg" alt="")
+          .mission-text We strongly believe blockchain technology will be the part of the technological future. Our mission is to help implement blockchain in our everyday life and prepare the base for the innovations through supporting the best initiatives in this field.
+      .map
+        .container
+          .map-title Countries We Are Present In
+          img.map-image(src="./images/map.png" alt="")
+          img.map-image-small(src="./images/map-small.png" alt="")
+          hr
+    #partnersSection
+      .partners
+        .container
+          .partners-title Our partners
+          .partners-row
+            div
+              img.partners-logo(src="./images/partner-1.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-2.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-3.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-4.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-5.png" alt="")
+          .partners-row
+            div
+              img.partners-logo(src="./images/partner-6.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-7.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-8.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-9.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-10.png" alt="")
+          .partners-row
+            div
+              img.partners-logo(src="./images/partner-11.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-12.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-13.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-14.png" alt="")
+            div
+              img.partners-logo(src="./images/partner-15.png" alt="")
+      .contacts
+        .container
+          .contacts-title Contact Us
+          .contacts-info
+            .contacts-info-email
+              a(href="mailto:info@capitaltrading.io")
+                img(src="./images/email.svg" alt="Email: ")
+                span info@capitaltrading.io
+            .contacts-info-links
+              a(href="https://www.linkedin.com/company/capitaltrading")
+                img(src="./images/linkedin.svg" alt="LinkedIn")
+              a(href="https://medium.com/@info_76950")
+                img(src="./images/medium.svg" alt="Medium")
+              a(href="https://twitter.com/CCapitalTrading")
+                img(src="./images/twitter.svg" alt="Twitter")
+          .contacts-cr
+            img.contacts-cr-logo(src="./images/logo-footer.svg" alt="CT")
+            .contacts-cr-text © Copyright 2018 Capital Trading. All Rights Reserved. Terms of Use and Privacy Policy
+          
